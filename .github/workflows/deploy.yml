@@ -20,7 +20,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:s3:::priyanshumishracs:role/s3wala
+          role-to-assume: arn:aws:iam::673181687487:role/s3wala
           aws-region: ap-south-1   # change if your bucket is in another region
 
       - name: Sync files to S3
